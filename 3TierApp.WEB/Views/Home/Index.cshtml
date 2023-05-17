@@ -1,0 +1,90 @@
+﻿@using _3TierApp.WEB.Models
+@model IndexViewModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+<style>
+    @@font-face {
+        font-family: 'FontAwesome';
+        src: url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2') format('woff2'), url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.woff') format('woff'), url('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/fonts/fontawesome-webfont.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal
+    }
+
+    .glyphicon {
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale
+    }
+
+    .glyphicon-chevron-right:before {
+        content: "\f054";
+    }
+
+    .glyphicon-chevron-left:before {
+        content: "\f053";
+    }
+</style>
+<h1>Список пользователей</h1>
+<div>
+    @Html.ActionLink("Create user", "CreateUser", new {})
+</div>
+@using (Html.BeginForm())
+{
+    <p>
+        Find by name: @Html.TextBox("SearchString")
+        <input type="submit" value="Search" />
+    </p>
+}
+<table class="table">
+    <tr>
+        <th>
+            @Html.ActionLink("Name", "Index", new {searchString = ViewBag.SearchString, sortName = "Name", currentSort = ViewBag.CurrentSort, page = 1 })
+            @*@Html.ActionLink("Name", "Index", new { sortOrder = ViewBag.SortParam, page = 1 })*@
+        </th>
+        <th>
+            @Html.ActionLink("Birth", "Index", new {searchString = ViewBag.SearchString, sortName = "Birth", currentSort = ViewBag.CurrentSort, page = 1 })
+        </th>
+        <th>
+            Role
+        </th>
+    </tr>
+    @foreach (UserViewModel u in Model.Users)
+    {
+        <tr><td>@u.Name</td><td>@u.Birth</td><td>@u.Role</td>
+        <td>
+            @Html.ActionLink("Add Access Time", "AddAccessTime", new { id=u.ID }) |
+            @Html.ActionLink("Show Access Time", "ShowAccessTime", new { id=u.ID }) |
+            @Html.ActionLink("Update User", "UpdateUser", new { id=u.ID }) |
+            @Html.ActionLink("Delete User", "DeleteUser", new { id=u.ID })
+        </td>
+        </tr>
+    }
+</table>
+@if (Model.PageViewModel.HasPreviousPage)
+{
+    <a asp-action="Index"
+   asp-route-page="@(Model.PageViewModel.PageNumber - 1)"
+   asp-route-searchString="@(ViewBag.SearchString)"
+   asp-route-currentSort="@(ViewBag.CurrentSort)"
+   asp-route-changeSortOrder="@(false)"
+       class="btn btn-outline-dark">
+        <i class="glyphicon glyphicon-chevron-left"></i>
+        &lt;Back
+    </a>
+}
+@if (Model.PageViewModel.HasNextPage)
+{
+    <a asp-action="Index"
+   asp-route-page="@(Model.PageViewModel.PageNumber + 1)"
+   asp-route-searchString="@(ViewBag.SearchString)"
+   asp-route-currentSort="@(ViewBag.CurrentSort)"
+   asp-route-changeSortOrder="@(false)"
+       class="btn btn-outline-dark">
+        Forward&gt;
+        <i class="glyphicon glyphicon-chevron-right"></i>
+    </a>
+}

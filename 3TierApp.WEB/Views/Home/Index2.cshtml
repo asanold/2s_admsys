@@ -1,0 +1,57 @@
+﻿@model IEnumerable<_3TierApp.WEB.Models.UserViewModel>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<div>
+    @Html.ActionLink("Create user", "CreateUser", new {})
+</div>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Birth)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Role)
+        </th>
+        
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Birth)
+                @*@item.Birth.ToDateTime(TimeOnly.MinValue).ToString("dd/MM/yyyy")*@
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Role)
+            </td>
+            <td>
+                @Html.ActionLink("Add Access Time", "AddAccessTime", new { id=item.ID })
+            </td>
+            <td>
+                @Html.ActionLink("Show Access Time", "ShowAccessTime", new { id=item.ID })
+            </td>
+            <td>
+                @Html.ActionLink("Update User", "UpdateUser", new { id=item.ID })
+            </td>
+            <td>
+                @Html.ActionLink("Delete User", "DeleteUser", new { id=item.ID })
+            </td>
+        </tr>
+    }
+
+
+</table>

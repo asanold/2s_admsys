@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33424.131
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "3TierApp", "3TierApp\3TierApp.shproj", "{175397C2-72E9-41E0-873E-AEEC8A2ECEED}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3TierApp.DAL", "3TierApp.DAL\3TierApp.DAL.csproj", "{D1AF2033-4403-47FD-9DCD-1F48E5B35809}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3TierApp.BLL", "3TierApp.BLL\3TierApp.BLL.csproj", "{F3BA90B5-BF35-4191-87EA-2933D7C2D067}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3TierApp.WEB", "3TierApp.WEB\3TierApp.WEB.csproj", "{B5E33D5F-B736-43F8-AD3C-BDEFFDF74CE3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{175397C2-72E9-41E0-873E-AEEC8A2ECEED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{175397C2-72E9-41E0-873E-AEEC8A2ECEED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1AF2033-4403-47FD-9DCD-1F48E5B35809}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1AF2033-4403-47FD-9DCD-1F48E5B35809}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1AF2033-4403-47FD-9DCD-1F48E5B35809}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1AF2033-4403-47FD-9DCD-1F48E5B35809}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3BA90B5-BF35-4191-87EA-2933D7C2D067}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3BA90B5-BF35-4191-87EA-2933D7C2D067}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3BA90B5-BF35-4191-87EA-2933D7C2D067}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3BA90B5-BF35-4191-87EA-2933D7C2D067}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5E33D5F-B736-43F8-AD3C-BDEFFDF74CE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5E33D5F-B736-43F8-AD3C-BDEFFDF74CE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5E33D5F-B736-43F8-AD3C-BDEFFDF74CE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5E33D5F-B736-43F8-AD3C-BDEFFDF74CE3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2AF8DA40-4AF3-4DC9-BCE1-2E9D3D27E86F}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		3TierApp\3TierApp.projitems*{175397c2-72e9-41e0-873e-aeec8a2eceed}*SharedItemsImports = 13
+	EndGlobalSection
+EndGlobal

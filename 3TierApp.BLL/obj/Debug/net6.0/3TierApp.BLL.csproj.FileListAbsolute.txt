@@ -1,0 +1,15 @@
+C:\Users\Galahad\source\repos\3TierApp\3TierApp.BLL\bin\Debug\net6.0\3TierApp.BLL.deps.json
+C:\Users\Galahad\source\repos\3TierApp\3TierApp.BLL\bin\Debug\net6.0\3TierApp.BLL.dll
+C:\Users\Galahad\source\repos\3TierApp\3TierApp.BLL\bin\Debug\net6.0\3TierApp.BLL.pdb
+C:\Users\Galahad\source\repos\3TierApp\3TierApp.BLL\bin\Debug\net6.0\3TierApp.DAL.dll
+C:\Users\Galahad\source\repos\3TierApp\3TierApp.BLL\bin\Debug\net6.0\3TierApp.DAL.pdb
+C:\Users\Galahad\source\repos\3TierApp\3TierApp.BLL\obj\Debug\net6.0\3TierApp.BLL.csproj.AssemblyReference.cache
+C:\Users\Galahad\source\repos\3TierApp\3TierApp.BLL\obj\Debug\net6.0\3TierApp.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Galahad\source\repos\3TierApp\3TierApp.BLL\obj\Debug\net6.0\3TierApp.BLL.AssemblyInfoInputs.cache
+C:\Users\Galahad\source\repos\3TierApp\3TierApp.BLL\obj\Debug\net6.0\3TierApp.BLL.AssemblyInfo.cs
+C:\Users\Galahad\source\repos\3TierApp\3TierApp.BLL\obj\Debug\net6.0\3TierApp.BLL.csproj.CoreCompileInputs.cache
+C:\Users\Galahad\source\repos\3TierApp\3TierApp.BLL\obj\Debug\net6.0\3TierApp.BLL.csproj.CopyComplete
+C:\Users\Galahad\source\repos\3TierApp\3TierApp.BLL\obj\Debug\net6.0\3TierApp.BLL.dll
+C:\Users\Galahad\source\repos\3TierApp\3TierApp.BLL\obj\Debug\net6.0\refint\3TierApp.BLL.dll
+C:\Users\Galahad\source\repos\3TierApp\3TierApp.BLL\obj\Debug\net6.0\3TierApp.BLL.pdb
+C:\Users\Galahad\source\repos\3TierApp\3TierApp.BLL\obj\Debug\net6.0\ref\3TierApp.BLL.dll
